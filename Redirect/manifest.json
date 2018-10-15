@@ -1,0 +1,17 @@
+{
+  "name": "Website Block",
+  "description": "Blocks sakai and redirects it to another duke website",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {"scripts":["redir.js"]},
+  "permissions": [
+    "webRequest",
+    "*://www.sakai.duke.edu.com/*",
+    "*://www.https://dukehub.duke.edu/*",
+    "webRequestBlocking"
+  ],
+  "browser_action": {
+      "default_icon": "nothing.png",
+      "default_title": "chrome"
+    }
+}
